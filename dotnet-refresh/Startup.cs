@@ -25,7 +25,22 @@ namespace dotnet_refresh
             services.AddControllers();
 
             // Register the Swagger services
-            services.AddSwaggerDocument();
+            services.AddSwaggerDocument(config =>
+            {
+                config.PostProcess = document =>
+                {
+                    document.Info.Version = "v1";
+                    document.Info.Title = "Simple ToDo API";
+                    document.Info.Description = "A simple ASP.NET Core web API";
+                    document.Info.TermsOfService = "None";
+                    document.Info.Contact = new NSwag.OpenApiContact
+                    {
+                        Name = "Marc Moser",
+                        Email = string.Empty,
+                        Url = "https://github.com/markxeasy"
+                    };
+                };
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
