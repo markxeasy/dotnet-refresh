@@ -9,6 +9,7 @@ using dotnet_refresh.Models;
 
 namespace dotnet_refresh.Controllers
 {
+    [ApiConventionType(typeof(DefaultApiConventions))]
     [Route("api/[controller]")]
     [ApiController]
     public class TodoItemsController : ControllerBase
