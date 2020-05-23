@@ -22,6 +22,10 @@ namespace dotnet_refresh
         {
             services.AddDbContext<TodoContext>(opt =>
                opt.UseInMemoryDatabase("TodoList"));
+
+            services.AddDbContext<NBATeamContext>(opt =>
+               opt.UseInMemoryDatabase("NBATeams"));
+
             services.AddControllers();
 
             // Register the Swagger services
