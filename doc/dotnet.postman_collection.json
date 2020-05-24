@@ -14,12 +14,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:8001/api/NBATeams",
-							"protocol": "https",
+							"raw": "http://localhost:8080/api/NBATeams",
+							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8001",
+							"port": "8080",
 							"path": [
 								"api",
 								"NBATeams"
@@ -34,12 +34,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:8001/api/NBATeams/good",
-							"protocol": "https",
+							"raw": "http://localhost:8080/api/NBATeams/good",
+							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8001",
+							"port": "8080",
 							"path": [
 								"api",
 								"NBATeams",
@@ -55,12 +55,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:8001/api/NBATeams/1",
-							"protocol": "https",
+							"raw": "http://localhost:8080/api/NBATeams/1",
+							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8001",
+							"port": "8080",
 							"path": [
 								"api",
 								"NBATeams",
@@ -85,12 +85,12 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:8001/api/NBATeams",
-							"protocol": "https",
+							"raw": "http://localhost:8080/api/NBATeams",
+							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8001",
+							"port": "8080",
 							"path": [
 								"api",
 								"NBATeams"
@@ -114,12 +114,12 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:8001/api/NBATeams/1",
-							"protocol": "https",
+							"raw": "http://localhost:8080/api/NBATeams/1",
+							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8001",
+							"port": "8080",
 							"path": [
 								"api",
 								"NBATeams",
@@ -135,12 +135,12 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:8001/api/NBATeams/1",
-							"protocol": "https",
+							"raw": "http://localhost:8080/api/NBATeams/1",
+							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8001",
+							"port": "8080",
 							"path": [
 								"api",
 								"NBATeams",
@@ -162,12 +162,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:8001/api/ToDoItems",
-							"protocol": "https",
+							"raw": "http://localhost:8080/api/ToDoItems",
+							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8001",
+							"port": "8080",
 							"path": [
 								"api",
 								"ToDoItems"
@@ -182,12 +182,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:8001/api/ToDoItems/all",
-							"protocol": "https",
+							"raw": "http://localhost:8080/api/ToDoItems/all",
+							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8001",
+							"port": "8080",
 							"path": [
 								"api",
 								"ToDoItems",
@@ -203,12 +203,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:8001/api/ToDoItems",
-							"protocol": "https",
+							"raw": "http://localhost:8080/api/ToDoItems",
+							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8001",
+							"port": "8080",
 							"path": [
 								"api",
 								"ToDoItems"
@@ -232,12 +232,12 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:8001/api/ToDoItems",
-							"protocol": "https",
+							"raw": "http://localhost:8080/api/ToDoItems",
+							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8001",
+							"port": "8080",
 							"path": [
 								"api",
 								"ToDoItems"
@@ -261,12 +261,12 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:8001/api/ToDoItems/1",
-							"protocol": "https",
+							"raw": "http://localhost:8080/api/ToDoItems/1",
+							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8001",
+							"port": "8080",
 							"path": [
 								"api",
 								"ToDoItems",
@@ -282,12 +282,12 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:8001/api/ToDoItems/1",
-							"protocol": "https",
+							"raw": "http://localhost:8080/api/ToDoItems/1",
+							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8001",
+							"port": "8080",
 							"path": [
 								"api",
 								"ToDoItems",
