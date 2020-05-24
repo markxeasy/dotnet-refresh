@@ -5,7 +5,7 @@ A very simple project to have some ToDo REST API with a Swagger integration to s
 Follow the steps detailed [here](https://dotnet.microsoft.com/download) to install everything needed to compile and run the project, if you wish to run the project as a standalone and not in a container (which is not recommended). To run the application as intended within a container Docker is required for this project and it can be download following the steps detailed [here](https://www.docker.com/products/docker-desktop).
 
 #### Installation
-Run the `docker build` command from within the `dotnet-refresh/` folder, it is recommended that the `-t` flag is used to give a recognizable name to the image it will create of the container. An example of the command would be like this: `docker build -t dotnet-refresh:v1` where `v1` is the tag we are applying to the image.
+Run the `docker build` command from within the `dotnet-refresh/` folder which has the Dockerfile in it. It is also recommended that the `-t` flag is used to give a recognizable name to the image it will create of the container. An example of the command would be like this: `docker build -t dotnet-refresh:v1` where `v1` is the tag we are applying to the image.
 Once the image has been fully built run the following commands:
 
 `dotnet dev-certs https -ep ${HOME}/.aspnet/https/aspnetapp.pfx -p {PASSWORD}` (substitute `{PASSWORD}` with one of your choice)
