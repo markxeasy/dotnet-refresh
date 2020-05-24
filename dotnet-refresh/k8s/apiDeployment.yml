@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dotnet-refresh-api-deployment
+spec:
+  selector:
+    matchLabels:
+      app: dotnet-refresh-api-pod
+  template:
+    metadata:
+      labels:
+        app: dotnet-refresh-api-pod
+    spec:
+      containers:
+      - name: dotnet-refresh-application
+        image: dotnet-refresh-api:v1
+        resources:
+          limits:
+            memory: "512Mi"
+            cpu: "1000m"
+        env:
+          - name: MYSQL_ROOT_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: mysql-secrets
+                key: ROOT_PASSWORD
+        ports:
+        - containerPort: 80

@@ -10,11 +10,9 @@ Run the `docker build` command from within the `dotnet-refresh/` folder which ha
 #### Launch
 To run the project use the following commands:
 
-`kubectl apply -f dotnet-refresh/k8s/deployment.yml` this will create a pod using the image of the .NET application we created earlier.
+`kubectl apply -f dotnet-refresh/k8s` this will all deployments, secrets, volumes and services needed to run the application.
 
-Then use the `kubectl apply -f dotnet-refresh/k8s/service.yml` to create the load balancer which will expose our APIs outside the cluster. 
-
-Once both are up and running (can be checked using the `kubectl get pods` or `kubectl get svc` respectively) the APIs are ready to be used at `localhost:8080`. It is possible to open the browser and go to [https://localhost:8080/swagger](https://localhost:8080/swagger) to check the OpenAPI documentation.
+Once both are up and running (can be checked using the `kubectl get pods` to see the containers' status) the APIs are ready to be used at `localhost:8080`. It is possible to open the browser and go to [https://localhost:8080/swagger](https://localhost:8080/swagger) to check the OpenAPI documentation.
 Afterwards use a client like Postman to try out the various endpoints to see their functionality. An export of a Postman collection with all the API calls can be found in the `doc/` folder.
 
 #### Cleanup
