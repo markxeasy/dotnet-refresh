@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dotnet-refresh-deployment
+spec:
+  selector:
+    matchLabels:
+      app: dotnet-refresh-pod
+  template:
+    metadata:
+      labels:
+        app: dotnet-refresh-pod
+    spec:
+      containers:
+      - name: dotnet-refresh-container
+        image: dotnet-refresh-api:v1
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
+      
