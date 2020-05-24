@@ -7,10 +7,14 @@ Follow the steps detailed [here](https://dotnet.microsoft.com/download) to insta
 #### Installation
 Run the `docker build` command from within the `dotnet-refresh/` folder, it is recommended that the `-t` flag is used to give a recognizable name to the image it will create of the container. An example of the command would be like this: `docker build -t dotnet-refresh:v1` where `v1` is the tag we are applying to the image.
 Once the image has been fully built run the following commands:
-`dotnet dev-certs https -ep ${HOME}/.aspnet/https/aspnetapp.pfx -p {PASSWORD}`
+
+`dotnet dev-certs https -ep ${HOME}/.aspnet/https/aspnetapp.pfx -p {PASSWORD}` (substitute `{PASSWORD}` with one of your choice)
+
 and 
+
 `dotnet dev-certs https --trust`
-to create an HTTPS certificate for development to use the HTTPS protocol, this will be needed to later call the endpoint correctly.
+
+to create an HTTPS certificate for development use, this will be needed to later call the endpoint correctly.
 
 #### Launch
 To run the project first copy the `docker/run.dist` file (keeping the copy in the `docker/` folder and rename it to `run`, afterwards within the copy change the value of `[cert_password]` to the same password you've used to generate the HTTPS certificate. 
