@@ -12,17 +12,17 @@ spec:
         app: dotnet-refresh-api-pod
     spec:
       containers:
-      - name: dotnet-refresh-application
+      - name: dotnet-refresh-api
         image: dotnet-refresh-api:v1
         resources:
           limits:
             memory: "512Mi"
             cpu: "1000m"
         env:
-          - name: MYSQL_ROOT_PASSWORD
+          - name: MSSQL_SA_PASSWORD
             valueFrom:
               secretKeyRef:
-                name: mysql-secrets
-                key: ROOT_PASSWORD
+                name: mssql-secrets
+                key: SA_PASSWORD
         ports:
         - containerPort: 80
